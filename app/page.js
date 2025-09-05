@@ -7,6 +7,10 @@ export default async function HomePage() {
 
   return (
     <main className="p-6 max-w-6xl mx-auto">
+      <nav className="mb-8">
+        <Link href="/" className="text-blue-600 hover:underline mr-5">Home</Link>
+        <Link href="/" className="text-blue-600 hover:underline ml-7 ">   about us </Link>
+      </nav>
       <h1 className="text-3xl font-bold mb-6">Webstore</h1>
       <div className="grid md:grid-cols-3 gap-6">
         {products.map((p) => (
