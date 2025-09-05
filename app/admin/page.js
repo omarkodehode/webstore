@@ -1,8 +1,7 @@
 import { auth } from '@clerk/nextjs/server'
 import { sanityClient } from '@/lib/sanity.client'
 import { qProducts } from '@/lib/sanity.queries'
-import AdminUI from './AdminUI'
-
+import AdminUI from './adminUI'
 export default async function AdminPage() {
   const { userId } = auth()
   if (!userId) {

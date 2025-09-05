@@ -1,7 +1,8 @@
 import { auth } from '@clerk/nextjs/server'
 import { sanityClient } from '@/lib/sanity.client'
 import { qProductById } from '@/lib/sanity.queries'
-import EditUI from '../EditUI'
+import EditUI from '../../EditUI'
+
 
 export default async function EditPage({ params }) {
   const { userId } = auth()
